@@ -1702,3 +1702,160 @@ h1.heading-h3 {
         margin-top: -80px;
     }
 }
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .workflow-sec-container .single-workflow:nth-child(4) {
+        margin-top: 3rem;
+    }
+    .custom_col_6 {
+        flex: 0 0 20%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .custom_col_6 {
+        flex: 0 0 20%;
+    }
+    .workflow-sec-container .single-workflow:nth-child(4),   .workflow-sec-container .single-workflow:nth-child(3) {
+        margin-top: 3rem;
+    }
+    .workflow-sec {
+        margin: 0 auto;
+    }
+    h1.heading-h3 {
+        font-size: 42px;
+        word-break: break-all;
+    }
+    .tabs_unIMG img {
+        width: 60%;
+    }
+    .tabs_unIMG {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .custom_col_6 {
+        flex: 0 0 20%;
+    }
+    .workflow-sec-container .single-workflow:nth-child(1), .workflow-sec-container .single-workflow:nth-child(2), .workflow-sec-container .single-workflow:nth-child(4),   .workflow-sec-container .single-workflow:nth-child(3) {
+        margin-top: 3rem;
+    }
+    .workflow-sec {
+        margin: 0 auto;
+    }
+    h1.heading-h3 {
+        font-size: 42px;
+        word-break: break-all;
+    }
+    .commonBTN4 {
+        padding: 12px 10px;
+        font-size: 15px;
+    }
+    h1.heading {
+        font-size: 35px;
+    }
+    .workflow-sec-container {
+        max-width: 360px;
+    }
+    .black-bg-banner-2 .commonBTN1 {
+        height: 45px;
+        padding: 0 12px;
+        font-size: 16px;
+    }
+    .tab_navigation li img {
+        width: 45px;
+    }
+    .tab_container_area .heading.heading-h3 {
+        font-size: 28px;
+    }
+    .commonBTN2 {
+        padding: 12px 30px;
+    }
+    .black-bg-banner-2 input {
+        width: 275px;
+        font-size: 15px;
+    }
+    .black-bg-banner-2 .slider-btn .bi-pencil-fill {
+        top: 17px;
+        left: 17px;
+    }
+    .heading.heading-h6 {
+        font-size: 15px;
+    }
+    .package_pricing .price-section h2 {
+        font-size: 28px;
+    }
+    .package_pricing .price-section p {
+        font-size: 16px;
+    }
+    .package_pricing .features-section h3, .get-section h3 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 476px) { 
+    
+    .custom_col_6 {
+        flex: 0 0 25%;
+    }
+
+    h1.heading {
+        font-size: 28px;
+    }
+    .tab_navigation1, .tab_navigation3, .tab_navigation4{
+    flex-wrap: wrap;
+    gap: 8px;
+    }
+    .commonBTN4 {
+        padding: 6px 8px;
+    }
+    .black-bg-banner-2 input {
+        width: 100%;
+    }
+    .black-bg-banner-2 .commonBTN1 {
+        margin: 10px 0;
+    }
+    .package_pricing {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .package_pricing .pricing-card {
+        width: 85%;
+    }
+    .lastSlideImg img {
+        width: 60%;
+    }
+    .tab_navigation .tab-name {
+        font-size: 10px;
+    }
+    .commonBTN2  {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    .commonBTN3 {
+        font-size: 16px;
+    }
+    .tabs_unIMG img {
+        width: 70%;
+    }
+    .tabs_unIMG {
+        display: flex;
+        justify-content: center;
+    }
+    /* .features_get {
+        height: auto;
+    } */
+    .package_pricing .features-section h3, .get-section h3 {
+        font-size: 14px;
+    }
+    .package_pricing li {
+        font-size: 13px;
+    }
+    .circle img {
+        left: 3%;
+         width: 30%;
+    }
+}
