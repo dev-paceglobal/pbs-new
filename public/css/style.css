@@ -207,7 +207,16 @@ li {
     height: 100vh;
     overflow: hidden;
 }
-
+.logo_banner {
+    height: auto;
+}
+.logo_banner .row {
+        padding: 11rem 0;
+}
+.logo_banner .logoSwiperMarginTop  {
+        margin-top: -60px;
+        margin-bottom: 65px;
+}
 .home-banner-video {
     position: absolute;
     top: 0;
@@ -1696,7 +1705,9 @@ h1.heading-h3 {
 @media only screen and (min-width: 1001px) and (max-width: 1399px) {
     .innerBanner {
         height: 78vh;
-     
+    }
+    .logo_banner {
+        height: auto;
     }
     .logoSwiperMarginTop {
         margin-top: -80px;
@@ -1704,6 +1715,11 @@ h1.heading-h3 {
 }
 
 
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .custom_col_7 {
+        flex: 0 0 16.666%;
+    }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .workflow-sec-container .single-workflow:nth-child(4) {
         margin-top: 3rem;
@@ -1711,9 +1727,33 @@ h1.heading-h3 {
     .custom_col_6 {
         flex: 0 0 20%;
     }
+    .custom_col_7 {
+        flex: 0 0 16.666%;
+    }
+    h1.heading-h1{
+        font-size: 48px;
+    }
+    .commonBTN2 {
+        padding: 12px 20px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
+    h1.heading-h1{
+        font-size: 52px;
+    }
+    .commonBTN4 {
+        font-size: 16px;
+        padding: 12px 10px;
+    }
+    .innerBanner {
+        height: 78vh;
+    }
+    .logo_banner {
+        height: auto;
+    }
+    .custom_col_7 {
+        flex: 0 0 20%;
+    }
     .custom_col_6 {
         flex: 0 0 20%;
     }
@@ -1736,6 +1776,25 @@ h1.heading-h3 {
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+   
+    .innerBanner {
+        height: 85vh;
+    }
+    .logo_banner {
+        height: auto;
+    }
+    .custom_col_7 {
+        flex: 0 0 25%;
+    }
+    .logo_banner_img {
+        padding-top: 1rem;
+    }
+    .aboutbanner .bannerContent h2.heading-h6 {
+        font-size: 16px;
+    }
+    .bannerContent.customLogoBox .slider-list ul li {
+        font-size: 15px;
+    }
     .custom_col_6 {
         flex: 0 0 20%;
     }
@@ -1744,6 +1803,10 @@ h1.heading-h3 {
     }
     .workflow-sec {
         margin: 0 auto;
+    }
+    .award_sec .commonBTN4 {
+        padding: 12px 3px;
+        font-size: 14px;
     }
     h1.heading-h3 {
         font-size: 42px;
