@@ -28,11 +28,11 @@
                             <h2 class="heading heading-h6 text-white letter-spacing-1 line-height-1-5 ">
                                 Get an Amazing Business Logo Designed<br>With Passion And Proficiency</h2>
                             <div class="slider-btn">
-                                <form action="" method="get">
+                                <form id="businessForm">
                                     <i class="bi bi-pencil-fill"></i>
-                                    <input type="text" name="cname" placeholder="Enter Your Business Name"
+                                    <input type="text" name="cname" id="cname" placeholder="Enter Your Business Name"
                                         class="banner-input-field" required="" autofocus="">
-                                    <input type="submit" value="Start Now" class="commonBTN1">
+                                    <input type="submit" value="Start Now" id="nextButton" class="commonBTN1">
                                 </form>
                             </div>
                         </div>
@@ -310,7 +310,7 @@
                     <p>
                         Folks think we're rad. We're rated 4.8/5 from 100+ customer reviews.
                     </p>
-                    <a class="commonBTN2" href="javascript:;">
+                    <a class="commonBTN2" href="/portfolio">
                         Explore More Here
                     </a>
                     <div class=" pt-5 ">
@@ -1280,7 +1280,7 @@
 
                     </div>
                     <div class="text-center mt-5">
-                        <a class="commonBTN2" href="javascript:;">
+                        <a class="commonBTN2" href="/price-plans">
                             Pocket - Plans
                         </a>
                     </div>
@@ -1517,6 +1517,14 @@
                 </div>
             </div>
         </section>
+<script>
+    document.getElementById('businessForm').addEventListener('submit', function(event) {
+        event.preventDefault();
 
+        const cname = document.getElementById('cname').value;
+        localStorage.setItem('cname', cname);
+        window.location.href = '/step-2';  
+    });
+</script>
 
         <%- include('partials/footer') %>

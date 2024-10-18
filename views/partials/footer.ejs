@@ -130,8 +130,42 @@ var swiper = new Swiper(".swiperlastSlider", {
         clickable: true,
     },
 });
-</script>
 
+</script>
+<!-- NProgress JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contactForm');
+        const submitButton = document.getElementById('submit_contact');
+
+        form.addEventListener('submit', function (event) {
+            submitButton.disabled = true;
+            submitButton.value = 'Sending...'; 
+            NProgress.start();
+
+          
+        });
+    });
+
+    // let formData = {
+    //     cname: null,
+    //     Slogan: null
+    // };
+    // document.getElementById('cname').addEventListener('input', function() {
+    //     formData.cname = this.value;
+    // });
+    // document.getElementById('Slogan').addEventListener('input', function() {
+    //     formData.Slogan = this.value;
+    // });
+    // document.getElementById('nextButton').addEventListener('click', async function() {
+    //     const queryString = `?cname=${encodeURIComponent(formData.cname)}&slogan=${encodeURIComponent(formData.Slogan)}`;
+    //     console.log(first)
+    // });
+
+
+</script>
 </body>
 
 </html>

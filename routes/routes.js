@@ -32,5 +32,23 @@ router.get('/explainer-video-animations', (req, res) => {
 router.get('/amazon-marketing', (req, res) => {
     res.render('amazon-marketing', { title: 'Amazon Marketing' });
 });
+router.get('/step-2', (req, res) => {
+    res.render('brief', { title: 'Logura' });
+});
+router.get('/step-3', (req, res) => {
+    res.render('brief1', { title: 'Logura' });
+});
+router.get('/step-4', (req, res) => {
+    res.render('brief2', { title: 'Logura' });
+});
+router.get('/step-5', (req, res) => {
+    res.render('brief3', { title: 'Logura' });
+});
+router.get('/step-6', (req, res) => {
+    res.render('brief4', { title: 'Logura' });
+});
+router.get('/step-7', (req, res) => {
+    res.render('brief5', { title: 'Logura' });
+});
 
 module.exports = router;

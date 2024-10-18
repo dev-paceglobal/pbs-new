@@ -159,6 +159,19 @@
                             Let's Discuss
                         </h1>
                         <form id="contactForm" method="POST" action="/send-email-package">
+                            <!-- Display flash message for success -->
+                            <% if (messages.success) { %>
+                                <div class="alert alert-success">
+                                    <%= messages.success %>
+                                </div>
+                            <% } %>
+
+                            <!-- Display flash message for error -->
+                            <% if (messages.error) { %>
+                                <div class="alert alert-danger">
+                                    <%= messages.error %>
+                                </div>
+                            <% } %>
                             <div class="row">
                                 <div class="col-6">
                                     <input name="name" type="text" placeholder="Name*">
@@ -261,10 +274,8 @@
                             <div class="col-lg-6 col-10">
                                 <div>
                                     <h1 class="heading heading-h3 ">Food Delivery App</h1>
-                                    
                                     <p>
                                         Meet our Food Delivery App, your gateway to a world of gastronomic pleasures delivered directly to your doorstep. Redefining the dining experience, we offer unmatched convenience, allowing you to savor your favorite dishes in the comfort of your home. With a vast selection of restaurants, cuisines, and menu options, our app gives you the freedom to choose.
-
                                     </p>
                                     <div class="flexx btns">
                                         

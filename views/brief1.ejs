@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logura</title>
+
+    <!---JQuery CDN path -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!---lightbox2 CDN path -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <!-- <link rel="icon" href="images/fav.jpg" type="image/x-icon" /> -->
+
+    <!---JQuery code file path -->
+    <script src="js/jquery.js"></script>
+    <!-- AOS style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS style -->
+
+    <!-- swiper style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <section class="main_container briefHeaderMain">
+
+
+        <!-------------------------- banner-------------------------- -->
+        <!-------------------------- banner-------------------------- -->
+
+        <section class="banner briefHeader">
+            <div class="innerBanner">
+                <!-- <div class="shape-red">
+                    <img src="images/dotsImg.webp" alt="">
+                </div> -->
+                <div class="dotsImg">
+                    <img src="images/dotsImg.webp" alt="dotsImg">
+                </div>
+                <header class="header">
+                    <div class="container">
+                        <div class="flexx justify-space item-center">
+                            <div>
+                                <div class="logo" data-aos="fade-down" data-aos-duration="800">
+                                    <img src="images/header-logo.webp" alt="header-logo">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="header-flex-right flex-80">
+                                    <div class="mainmenu-wrapper">
+                                        <nav class="page_nav">
+                                            <ul class="navbar">
+                                                <li class="lavel-1">
+                                                    <a href="tel:+19293221091" class="contact-num-header">
+                                                        <i class="bi bi-telephone-fill"></i>
+                                                        <span>929-322-1091</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </header>
+
+
+                <div class="center-container-outer">
+                    <div>
+                        <div class="center-container">
+                            <div class="slider-btn">
+                                <form id="businessForm">
+                                    <div class="">
+                                        <div class="">
+                                            <a href="javascript:void(0);" onclick="goBack()"><i class="bi bi-arrow-left"></i></a>
+                                            <button class="btn" type="submit"><i class="bi bi-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="search-country">
+                                        <select data-id="4" placeholder="Industry (optional)" name="industry"
+                                            id="industry" class="form-control screen1 industry" style="display: block;"
+                                            data-gtm-form-interact-field-id="0">
+                                            <option value="">Select Industry (optional)</option>
+                                            <option value="Accounting &amp; Finance">Accounting &amp; Finance</option>
+                                            <option value="Adventure &amp; Outdoor">Adventure &amp; Outdoor</option>
+                                            <option value="Agriculture &amp; Farming">Agriculture &amp; Farming</option>
+                                            <option value="Art &amp; Photography">Art &amp; Photography</option>
+                                            <option value="Attorney &amp; Legal">Attorney &amp; Legal</option>
+                                            <option value="Automotive">Automotive</option>
+                                            <option value="Aviation &amp; Marine">Aviation &amp; Marine</option>
+                                            <option value="Business &amp; Consulting">Business &amp; Consulting</option>
+                                            <option value="Children">Children</option>
+                                            <option value="Church &amp; Religious">Church &amp; Religious</option>
+                                            <option value="Cleaning Services">Cleaning Services</option>
+                                            <option value="Communications">Communications</option>
+                                            <option value="Community &amp; Foundations">Community &amp; Foundations
+                                            </option>
+                                            <option value="Computer &amp; Networking">Computer &amp; Networking</option>
+                                            <option value="Construction">Construction</option>
+                                            <option value="Cosmetics &amp; Jewelry">Cosmetics &amp; Jewelry</option>
+                                            <option value="Dating">Dating</option>
+                                            <option value="Dental">Dental</option>
+                                            <option value="Design &amp; Creative Services">Design &amp; Creative
+                                                Services</option>
+                                            <option value="Eco-Friendly/Green">Eco-Friendly/Green</option>
+                                            <option value="Education">Education</option>
+                                            <option value="Entertainment &amp; Media">Entertainment &amp; Media</option>
+                                            <option value="Events">Events</option>
+                                            <option value="Family">Family</option>
+                                            <option value="Fashion &amp; Apparel">Fashion &amp; Apparel</option>
+                                            <option value="Fitness &amp; Physical Training">Fitness &amp; Physical
+                                                Training</option>
+                                            <option value="Food &amp; Beverages">Food &amp; Beverages</option>
+                                            <option value="Furniture &amp; Interior">Furniture &amp; Interior</option>
+                                            <option value="Games">Games</option>
+                                            <option value="Healthcare &amp; Physician">Healthcare &amp; Physician
+                                            </option>
+                                            <option value="General">General</option>
+                                            <option value="Illustrative">Illustrative</option>
+                                            <option value="Industrial">Industrial</option>
+                                            <option value="Internet &amp; Web">Internet &amp; Web</option>
+                                            <option value="Insurance">Insurance</option>
+                                            <option value="Landscaping &amp; Yard Care">Landscaping &amp; Yard Care
+                                            </option>
+                                            <option value="Logistics &amp; Transportation">Logistics &amp;
+                                                Transportation</option>
+                                            <option value="Magazine">Magazine</option>
+                                            <option value="Mortgage &amp; Real Estate">Mortgage &amp; Real Estate
+                                            </option>
+                                            <option value="Nutrition &amp; life style">Nutrition &amp; life style
+                                            </option>
+                                            <option value="Pets &amp; Animals">Pets &amp; Animals</option>
+                                            <option value="Pharmaceutical &amp; Bio Tech">Pharmaceutical &amp; Bio Tech
+                                            </option>
+                                            <option value="Politics">Politics</option>
+                                            <option value="Pool &amp; Hot Tubs">Pool &amp; Hot Tubs</option>
+                                            <option value="Printing &amp; Publishing">Printing &amp; Publishing</option>
+                                            <option value="Restaurant">Restaurant</option>
+                                            <option value="Retail">Retail</option>
+                                            <option value="Security">Security</option>
+                                            <option value="Services">Services</option>
+                                            <option value="Spa &amp; Salon">Spa &amp; Salon</option>
+                                            <option value="Sports">Sports</option>
+                                            <option value="Staffing &amp; Recruiting">Staffing &amp; Recruiting</option>
+                                            <option value="Technology">Technology</option>
+                                            <option value="Travel &amp; Hospitality">Travel &amp; Hospitality</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-sec">
+                        <div class="step-footer">
+                            <p><span>STEP 3</span></p>
+                            <img src="images/step_key.webp" alt="step_key">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <!------------ select tag search feature -->
+    <script>
+        document.getElementById('businessForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const industry = document.getElementById('industry').value;
+            localStorage.setItem('industry', industry);
+            window.location.href = '/step-4';  
+        });
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <!------------ select tag search feature -->
+
+</body>
+
+</html>
