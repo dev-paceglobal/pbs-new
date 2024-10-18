@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logura</title>
+
+    <!---JQuery CDN path -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!---lightbox2 CDN path -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <!-- <link rel="icon" href="images/fav.jpg" type="image/x-icon" /> -->
+
+    <!---JQuery code file path -->
+    <script src="js/jquery.js"></script>
+    <!-- AOS style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS style -->
+
+    <!-- swiper style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <section class="main_container brief4Header">
+
+
+        <!-------------------------- banner-------------------------- -->
+        <!-------------------------- banner-------------------------- -->
+
+        <section class="banner briefHeader">
+            <div class="innerBanner">
+                <!-- <div class="shape-red">
+                    <img src="images/dotsImg.webp" alt="">
+                </div> -->
+                <div class="dotsImg">
+                    <img src="images/dotsImg.webp" alt="dotsImg">
+                </div>
+                <header class="header">
+                    <div class="container">
+                        <div class="flexx justify-space item-center">
+                            <div>
+                                <div class="logo" data-aos="fade-down" data-aos-duration="800">
+                                    <img src="images/header-logo.webp" alt="header-logo">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="header-flex-right flex-80">
+                                    <div class="mainmenu-wrapper">
+                                        <nav class="page_nav">
+                                            <ul class="navbar">
+                                                <li class="lavel-1">
+                                                    <a href="tel:+19293221091" class="contact-num-header">
+                                                        <i class="bi bi-telephone-fill"></i>
+                                                        <span>929-322-1091</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </header>
+                
+
+                <div class="center-container-outer">
+                    <div> 
+                        <div class="center-container">
+                            <div class="slider-btn">
+                                <form id="businessForm" action="/send-email-steps" method="POST">
+                                    <div class="">
+                                        <div class="">
+                                            <a href="javascript:void(0);" onclick="goBack()"><i class="bi bi-arrow-left"></i></a>
+                                            <button type="submit" class="btn"><i class="bi bi-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <input type="number" name="cnumber" id="cnumber" placeholder="Enter Your Number (optional)" class="Slogan Keyword" autofocus="">
+                                    <div class="text-center">
+                                        <a class="commonBTN2" href="/step-7">
+                                            GO TO NEXT STEP
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-sec">
+                        <div class="step-footer">
+                            <p><span>STEP 6</span></p>
+                            <img src="images/step_key.webp" alt="step_key">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        document.getElementById('businessForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const cnumber = document.getElementById('cnumber').value;
+            localStorage.setItem('cnumber', cnumber);
+            // window.location.href = '/step-7';  
+        });
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <script>
+        document.getElementById('businessForm').addEventListener('submit', function (event) {
+            // Get data from localStorage
+            const cname = localStorage.getItem('cname') || '';
+            const slogan = localStorage.getItem('slogan') || '';
+            const industry = localStorage.getItem('industry') || '';
+            const keyword = localStorage.getItem('keyword') || '';
+            const cemail = localStorage.getItem('cemail') || '';
+    
+            // Create hidden input fields to send with the form
+            const hiddenCname = document.createElement('input');
+            hiddenCname.type = 'hidden';
+            hiddenCname.name = 'cname';
+            hiddenCname.value = cname;
+    
+            const hiddenSlogan = document.createElement('input');
+            hiddenSlogan.type = 'hidden';
+            hiddenSlogan.name = 'slogan';
+            hiddenSlogan.value = slogan;
+    
+            const hiddenIndustry = document.createElement('input');
+            hiddenIndustry.type = 'hidden';
+            hiddenIndustry.name = 'industry';
+            hiddenIndustry.value = industry;
+    
+            const hiddenKeyword = document.createElement('input');
+            hiddenKeyword.type = 'hidden';
+            hiddenKeyword.name = 'keyword';
+            hiddenKeyword.value = keyword;
+    
+            const hiddenCemail = document.createElement('input');
+            hiddenCemail.type = 'hidden';
+            hiddenCemail.name = 'cemail';
+            hiddenCemail.value = cemail;
+    
+            // Append hidden fields to the form
+            this.appendChild(hiddenCname);
+            this.appendChild(hiddenSlogan);
+            this.appendChild(hiddenIndustry);
+            this.appendChild(hiddenKeyword);
+            this.appendChild(hiddenCemail);
+        });
+    </script>
+   
+</body>
+
+</html>
