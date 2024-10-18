@@ -1694,6 +1694,10 @@ h1.heading-h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+
+.list_icon {
+    display: none;
+}
 /*-====================-----------=========== professional-web-design-services */
 
 
@@ -1703,14 +1707,21 @@ h1.heading-h3 {
 
 
 @media only screen and (min-width: 1001px) and (max-width: 1399px) {
-    .innerBanner {
+    /* .innerBanner {
         height: 78vh;
+    } */
+    .innerBanner {
+        height: auto;
+        padding: 10rem 0;
     }
     .logo_banner {
         height: auto;
     }
-    .logoSwiperMarginTop {
+    /* .logoSwiperMarginTop {
         margin-top: -80px;
+    } */
+    .logoSwiperMarginTop {
+        margin-top: 2rem;
     }
 }
 
@@ -1718,6 +1729,9 @@ h1.heading-h3 {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .custom_col_7 {
         flex: 0 0 16.666%;
+    }
+    .award_sec_unique .my-3.logo_design.mobileapplicationbox > div > .text-white {
+        height: 200px;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1736,14 +1750,63 @@ h1.heading-h3 {
     .commonBTN2 {
         padding: 12px 20px;
     }
+    .award_sec_unique .my-3.logo_design.mobileapplicationbox > div > .text-white {
+        height: 240px;
+    }
+    .award_sec_unique .logo_design h4.chooseh4 {
+        font-size: 22px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .award_sec_unique .my-3.logo_design.mobileapplicationbox > div > .text-white {
+        height: 220px;
+    }
+
+    .list_icon {
+        display: block;
+    }
+    .page_nav {
+        display: none;
+    }
+    .list_icon {
+        color: white;
+        font-size: 38px;
+    }
+    .page_nav .navbar {
+        display: block;
+        position: absolute;
+        right: 90px;
+        background: #000000bf;
+        backdrop-filter: blur(3px);
+        width: 300px;
+        padding: 1rem;
+    }
+    .page_nav .navbar li {
+        padding: 8px 0;
+    }
+    .page_nav .navbar li > ul {
+        display: unset;
+        background-color: #000000;
+        position: absolute;
+        top: 28px;
+        width: auto;
+        left: 86px;
+        padding: 19px 4px;
+        transition: all .3s linear;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+    }
     h1.heading-h1{
         font-size: 52px;
     }
     .commonBTN4 {
         font-size: 16px;
         padding: 12px 10px;
+    }
+    .award_sec .commonBTN4 {
+        font-size: 15px;
     }
     .innerBanner {
         height: 78vh;
@@ -1774,9 +1837,61 @@ h1.heading-h3 {
         display: flex;
         justify-content: center;
     }
+    .my-3.logo_design.mobileapplicationbox > div > .text-white {
+        height: 295px;
+    }
+    .logo_design h4.chooseh4 {
+        font-size: 20px;
+    }
+    .logoSwiperMarginTop {
+        margin-top: 2rem;
+    }
+    .innerBanner {
+        height: auto;
+        padding: 10rem 0;
+    }
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
-   
+    .list_icon {
+        display: block;
+    }
+    .page_nav {
+        display: none;
+    }
+    .list_icon {
+        color: white;
+        font-size: 38px;
+    }
+    .page_nav .navbar {
+        display: block;
+        position: absolute;
+        right: 10px;
+        background: #000000bf;
+        backdrop-filter: blur(3px);
+        width: 300px;
+        padding: 1rem;
+    }
+    .page_nav .navbar li {
+        padding: 8px 0;
+    }
+    .page_nav .navbar li > ul {
+        display: unset;
+        background-color: #000000;
+        position: absolute;
+        top: 28px;
+        width: auto;
+        left: 86px;
+        padding: 19px 4px;
+        transition: all .3s linear;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+    }
+    
+    
+    .proposal_form {
+       margin-top: 1rem;
+    }
     .innerBanner {
         height: 85vh;
     }
@@ -1856,16 +1971,46 @@ h1.heading-h3 {
     .package_pricing .features-section h3, .get-section h3 {
         font-size: 16px;
     }
+    .custom_col_5 {
+        flex: 0 0 33.33%;
+    }
+    .logoSwiperMarginTop {
+        margin-top: 2rem;
+    }
+    .innerBanner {
+        height: auto;
+        padding: 10rem 0;
+    }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .my-3.logo_design.mobileapplicationbox > div > .text-white {
+        height: 240px;
+    }
+ }
 @media only screen and (min-width: 300px) and (max-width: 476px) { 
     
     .custom_col_6 {
         flex: 0 0 25%;
     }
-
+    .proposal_form input::placeholder, .proposal_form textarea::placeholder {
+        font-size: 16px;
+    }
+    .proposal_form input, .proposal_form textarea, .proposal_form select {
+        font-size: 14px;
+        height: 50px;
+    }
+    .proposal_sec h1.heading {
+        font-size: 32px;
+    }
+    .book-applicationBox h1.heading {
+        font-size: 30px;
+    }
     h1.heading {
         font-size: 28px;
+    }
+    .books1Sec .testimonial-details h4 {
+        font-size: 26px;
     }
     .tab_navigation1, .tab_navigation3, .tab_navigation4{
     flex-wrap: wrap;
@@ -1920,5 +2065,8 @@ h1.heading-h3 {
     .circle img {
         left: 3%;
          width: 30%;
+    }
+    .my-3.logo_design.mobileapplicationbox > div > .text-white {
+        height: auto;
     }
 }

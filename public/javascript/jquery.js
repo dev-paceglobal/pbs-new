@@ -120,7 +120,11 @@ jQuery(document).ready(function () {
         
     });
 
-
+    $(document).ready(function(){
+        $('.list_parent').click(function(){
+            $(this).parent().find(".item").fadeToggle();
+        });
+    })
 
 
 })
