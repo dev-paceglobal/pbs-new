@@ -203,6 +203,11 @@ li {
     transition: all .5s linear;
 }
 
+.thankyou_banner .innerBanner {
+    height: auto;
+    padding: 12rem 0;
+}
+
 .innerBanner {
     height: 100vh;
     overflow: hidden;
@@ -1714,9 +1719,14 @@ h1.heading-h3 {
         height: auto;
         padding: 10rem 0;
     }
+    .briefHeader .innerBanner {
+        height: 100vh;
+        padding: 10rem 0;
+    }
     .logo_banner {
         height: auto;
     }
+    
     /* .logoSwiperMarginTop {
         margin-top: -80px;
     } */
@@ -1735,6 +1745,15 @@ h1.heading-h3 {
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .briefHeader .innerBanner {
+        height: 100vh;
+        padding: 10rem 0;
+    }
+    .thankyou_banner .innerBanner {
+        height: auto;
+        padding: 12rem 0;
+    }
     .workflow-sec-container .single-workflow:nth-child(4) {
         margin-top: 3rem;
     }
@@ -1759,6 +1778,14 @@ h1.heading-h3 {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     
+    .briefHeader .innerBanner {
+        height: 100vh;
+        padding: 10rem 0;
+    }
+    .thankyou_banner .innerBanner {
+        height: auto;
+        padding: 8rem 0;
+    }
     .award_sec_unique .my-3.logo_design.mobileapplicationbox > div > .text-white {
         height: 220px;
     }
@@ -1781,6 +1808,18 @@ h1.heading-h3 {
         backdrop-filter: blur(3px);
         width: 300px;
         padding: 1rem;
+    }
+    .un_page {
+        display: block;
+    }
+    .un_navbar {
+            display: unset !important;
+            position: unset !important;
+            right: unset !important;
+            background: unset !important;
+            backdrop-filter: unset !important;
+            width: unset !important;
+            padding: unset !important;
     }
     .page_nav .navbar li {
         padding: 8px 0;
@@ -1852,6 +1891,36 @@ h1.heading-h3 {
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+    
+    .un_page {
+        display: block !important;
+    }
+    .un_navbar {
+            display: unset !important;
+            position: unset !important;
+            right: unset !important;
+            background: unset !important;
+            backdrop-filter: unset !important;
+            width: unset !important;
+            padding: unset !important;
+    }
+
+
+    .briefHeader .innerBanner {
+        height: 100vh;
+        padding: 10rem 0;
+    }
+
+    .thankyou_banner .innerBanner {
+        height: auto;
+        padding: 8rem 0;
+    }
+    .briefHeader input.Slogan::placeholder { 
+        font-size: 20px;
+    }
+    .briefHeader input.Slogan {
+        font-size: 20px;
+    }
     .list_icon {
         display: block;
     }
@@ -1990,6 +2059,39 @@ h1.heading-h3 {
  }
 @media only screen and (min-width: 300px) and (max-width: 476px) { 
     
+    .result-container .single-final .single-final-text {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .briefHeader .abs1 img {
+        width: 170px;
+    }
+    .thankyou_banner .innerBanner .commonBTN5 {
+        font-size: 13px;
+
+    }
+
+    .thankyou_banner h1.heading {
+        z-index: 6;
+        position: relative;
+    }
+    .center-container .bi-arrow-right {
+        font-size: 25px;
+        top: 30px;
+    }
+    .result-container  .commonBTN5{
+        padding: 8px 10px;
+    }
+    .result-container .single-final .single-final-text h4 {
+        font-size: 16px;
+    }
+    .center-container .bi-arrow-left {
+        font-size: 25px;
+        top: 30px;
+    }
+
     .custom_col_6 {
         flex: 0 0 25%;
     }
